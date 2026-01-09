@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) throws Exception {
         /**
@@ -20,5 +22,9 @@ public class App {
          * 
          */
         System.out.println("Hello, World!");
+        Solution solution = new Solution();
+        int[] nums = { 2, 2, 1, 1, 1, 2, 2 };
+        int result = solution.majorityElement(nums);
+        System.out.println("The given input is: " + Arrays.toString(nums) + " and the majority element is: " + result);
     }
 }
